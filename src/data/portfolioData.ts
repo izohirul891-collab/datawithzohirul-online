@@ -9,11 +9,11 @@ export const personalInfo = {
   email: "izohirul891@gmail.com",
   phone: "01306853224",
   socialLinks: [
-    // { name: "LinkedIn", url: "https://linkedin.com/in/yourprofile", icon: "linkedin" },
-    // { name: "GitHub", url: "https://github.com/yourprofile", icon: "github" },
-    // { name: "Facebook", url: "https://facebook.com/yourprofile", icon: "facebook" },
-    // { name: "Instagram", url: "https://instagram.com/yourprofile", icon: "instagram" },
-    // { name: "WhatsApp", url: "https://wa.me/1306853224", icon: "whatsapp" },
+    { name: "LinkedIn", url: "https://linkedin.com/in/yourprofile", icon: "linkedin" },
+    { name: "GitHub", url: "https://github.com/yourprofile", icon: "github" },
+    { name: "Facebook", url: "https://facebook.com/yourprofile", icon: "facebook" },
+    { name: "Instagram", url: "https://instagram.com/yourprofile", icon: "instagram" },
+    { name: "WhatsApp", url: "https://wa.me/1306853224", icon: "whatsapp" },
   ] as { name: string; url: string; icon: string }[],
 };
 
