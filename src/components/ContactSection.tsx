@@ -1,10 +1,13 @@
 import { personalInfo } from "@/data/portfolioData";
-import { Mail, Phone, Github, Linkedin, Globe } from "lucide-react";
+import { Mail, Phone, Github, Linkedin, Globe, Facebook, Instagram, MessageCircle } from "lucide-react";
 
 const iconMap: Record<string, React.ElementType> = {
   linkedin: Linkedin,
   github: Github,
   website: Globe,
+  facebook: Facebook,
+  instagram: Instagram,
+  whatsapp: MessageCircle,
 };
 
 const ContactSection = () => {
