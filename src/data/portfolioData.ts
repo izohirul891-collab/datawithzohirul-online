@@ -9,7 +9,7 @@ export const personalInfo = {
   email: "izohirul891@gmail.com",
   phone: "01306853224",
   socialLinks: [
-    { name: "Facebook", url: "https://facebook.com/yourprofile", icon: "facebook" },
+    { name: "Facebook", url: "https://www.facebook.com/share/14V5ws9cPYG/?mibextid=wwXIfr", icon: "facebook" },
     { name: "LinkedIn", url: "https://linkedin.com/in/yourprofile", icon: "linkedin" },
     { name: "GitHub", url: "https://github.com/yourprofile", icon: "github" },
     { name: "WhatsApp", url: "https://wa.me/1306853224", icon: "whatsapp" },
