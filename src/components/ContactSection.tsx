@@ -68,7 +68,7 @@ const ContactSection = () => {
             className="space-y-5 p-6 md:p-8 rounded-2xl bg-background/5 border border-background/10 backdrop-blur-sm"
           >
             <div className="space-y-2">
-              <label className="text-sm font-semibold text-foreground/80">Name</label>
+              <label className="text-sm font-semibold text-primary">Name</label>
               <Input
                 value={form.name}
                 onChange={(e) => setForm({ ...form, name: e.target.value })}
