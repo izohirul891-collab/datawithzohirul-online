@@ -98,7 +98,7 @@ const ContactSection = () => {
                 value={form.email}
                 onChange={(e) => setForm({ ...form, email: e.target.value })}
                 placeholder="Your email"
-                className="bg-background/10 border-background/20 text-foreground placeholder:text-foreground/40 focus:border-primary"
+                className="bg-card text-card-foreground border-border placeholder:text-muted-foreground focus:border-primary rounded-[5px] px-2.5 py-2.5"
                 maxLength={255}
               />
             </div>
