@@ -6,6 +6,11 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/use-toast";
+import emailjs from "@emailjs/browser";
+
+const SERVICE_ID = "service_vcf8rfh";
+const TEMPLATE_ID = "template_zhje5u8";
+const PUBLIC_KEY = "tpfj_92kWXKz04Uo2";
 
 const iconMap: Record<string, React.ElementType> = {
   linkedin: Linkedin,
@@ -21,19 +26,28 @@ const ContactSection = () => {
   const [form, setForm] = useState({ name: "", email: "", subject: "", message: "" });
   const [sending, setSending] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!form.name.trim() || !form.email.trim() || !form.message.trim()) {
       toast({ title: "Please fill in all required fields", variant: "destructive" });
       return;
     }
     setSending(true);
-    // Simulate send
-    setTimeout(() => {
+    try {
+      await emailjs.send(SERVICE_ID, TEMPLATE_ID, {
+        from_name: form.name,
+        from_email: form.email,
+        subject: form.subject,
+        message: form.message,
+      }, PUBLIC_KEY);
       toast({ title: "Message sent!", description: "Thank you for reaching out." });
       setForm({ name: "", email: "", subject: "", message: "" });
+    } catch (error) {
+      console.error("EmailJS error:", error);
+      toast({ title: "Failed to send message", description: "Please try again later.", variant: "destructive" });
+    } finally {
       setSending(false);
-    }, 1000);
+    }
   };
 
   return (
