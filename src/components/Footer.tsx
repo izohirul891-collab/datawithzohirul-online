@@ -12,8 +12,7 @@ const Footer = () => (
       transition={{ duration: 0.5 }}
     >
       <a href="#home" className="font-display text-lg font-bold text-foreground">
-        {personalInfo.name.split(" ").pop()}
-        <span className="text-primary">.</span>
+        MD. ZOHIRUL ISLAM
       </a>
       <p className="text-sm text-muted-foreground flex items-center gap-1.5">
         © {new Date().getFullYear()} {personalInfo.name}. Made with
