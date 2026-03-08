@@ -89,7 +89,7 @@ const ContactSection = () => {
               />
             </div>
             <div className="space-y-2">
-              <label className="text-sm font-semibold text-foreground/80">Subject</label>
+              <label className="text-sm font-semibold text-primary">Subject</label>
               <Input
                 value={form.subject}
                 onChange={(e) => setForm({ ...form, subject: e.target.value })}
