@@ -1,5 +1,5 @@
 import { personalInfo } from "@/data/portfolioData";
-import { Mail, Phone, Github, Linkedin, Globe, Facebook, Instagram, MessageCircle, Send, FileDown } from "lucide-react";
+import { Mail, Phone, Github, Linkedin, Globe, Facebook, Instagram, MessageCircle, Send, FileDown, Eye } from "lucide-react";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { Input } from "@/components/ui/input";
