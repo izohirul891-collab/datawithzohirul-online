@@ -45,12 +45,6 @@ const HeroSection = () => {
               Hello, I'm{" "}
               <span className="relative text-primary">
                 {personalInfo.name}
-                <motion.span
-                  className="absolute -bottom-2 left-0 h-1 rounded-full bg-primary"
-                  initial={{ width: 0 }}
-                  animate={{ width: "100%" }}
-                  transition={{ duration: 0.8, delay: 0.8 }}
-                />
               </span>
             </motion.h1>
 
