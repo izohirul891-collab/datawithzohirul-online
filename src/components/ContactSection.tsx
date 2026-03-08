@@ -87,7 +87,7 @@ const ContactSection = () => {
                 value={form.name}
                 onChange={(e) => setForm({ ...form, name: e.target.value })}
                 placeholder="Your name"
-                className="bg-background/10 border-background/20 text-foreground placeholder:text-foreground/40 focus:border-primary"
+                className="bg-card text-card-foreground border-border placeholder:text-muted-foreground focus:border-primary rounded-[5px] px-2.5 py-2.5"
                 maxLength={100}
               />
             </div>
@@ -98,7 +98,7 @@ const ContactSection = () => {
                 value={form.email}
                 onChange={(e) => setForm({ ...form, email: e.target.value })}
                 placeholder="Your email"
-                className="bg-background/10 border-background/20 text-foreground placeholder:text-foreground/40 focus:border-primary"
+                className="bg-card text-card-foreground border-border placeholder:text-muted-foreground focus:border-primary rounded-[5px] px-2.5 py-2.5"
                 maxLength={255}
               />
             </div>
@@ -108,7 +108,7 @@ const ContactSection = () => {
                 value={form.subject}
                 onChange={(e) => setForm({ ...form, subject: e.target.value })}
                 placeholder="Subject"
-                className="bg-background/10 border-background/20 text-foreground placeholder:text-foreground/40 focus:border-primary"
+                className="bg-card text-card-foreground border-border placeholder:text-muted-foreground focus:border-primary rounded-[5px] px-2.5 py-2.5"
                 maxLength={200}
               />
             </div>
@@ -119,7 +119,7 @@ const ContactSection = () => {
                 onChange={(e) => setForm({ ...form, message: e.target.value })}
                 placeholder="Your message"
                 rows={5}
-                className="bg-background/10 border-background/20 text-foreground placeholder:text-foreground/40 focus:border-primary resize-none"
+                className="bg-card text-card-foreground border-border placeholder:text-muted-foreground focus:border-primary rounded-[5px] px-2.5 py-2.5 resize-none"
                 maxLength={1000}
               />
             </div>
