@@ -78,7 +78,7 @@ const ContactSection = () => {
               />
             </div>
             <div className="space-y-2">
-              <label className="text-sm font-semibold text-foreground/80">Email</label>
+              <label className="text-sm font-semibold text-primary">Email</label>
               <Input
                 type="email"
                 value={form.email}
