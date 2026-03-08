@@ -68,7 +68,7 @@ const ContactSection = () => {
             className="space-y-5 p-6 md:p-8 rounded-2xl bg-background/5 border border-background/10 backdrop-blur-sm"
           >
             <div className="space-y-2">
-              <label className="text-sm font-semibold text-foreground/80">Name</label>
+              <label className="text-sm font-semibold text-primary">Name</label>
               <Input
                 value={form.name}
                 onChange={(e) => setForm({ ...form, name: e.target.value })}
@@ -78,7 +78,7 @@ const ContactSection = () => {
               />
             </div>
             <div className="space-y-2">
-              <label className="text-sm font-semibold text-foreground/80">Email</label>
+              <label className="text-sm font-semibold text-primary">Email</label>
               <Input
                 type="email"
                 value={form.email}
@@ -89,7 +89,7 @@ const ContactSection = () => {
               />
             </div>
             <div className="space-y-2">
-              <label className="text-sm font-semibold text-foreground/80">Subject</label>
+              <label className="text-sm font-semibold text-primary">Subject</label>
               <Input
                 value={form.subject}
                 onChange={(e) => setForm({ ...form, subject: e.target.value })}
@@ -99,7 +99,7 @@ const ContactSection = () => {
               />
             </div>
             <div className="space-y-2">
-              <label className="text-sm font-semibold text-foreground/80">Message</label>
+              <label className="text-sm font-semibold text-primary">Message</label>
               <Textarea
                 value={form.message}
                 onChange={(e) => setForm({ ...form, message: e.target.value })}
