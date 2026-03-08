@@ -99,7 +99,7 @@ const ContactSection = () => {
               />
             </div>
             <div className="space-y-2">
-              <label className="text-sm font-semibold text-foreground/80">Message</label>
+              <label className="text-sm font-semibold text-primary">Message</label>
               <Textarea
                 value={form.message}
                 onChange={(e) => setForm({ ...form, message: e.target.value })}
