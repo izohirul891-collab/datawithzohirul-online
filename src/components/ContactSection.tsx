@@ -169,6 +169,21 @@ const ContactSection = () => {
 
             <a
               href="/cv.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-4 p-5 rounded-2xl bg-background/5 border border-background/10 hover:bg-background/10 hover:border-primary/30 transition-all duration-300"
+            >
+              <div className="p-3.5 rounded-xl bg-primary/20 text-primary">
+                <Eye size={24} />
+              </div>
+              <div>
+                <p className="text-xs text-foreground/50 uppercase tracking-wider font-semibold">Resume</p>
+                <p className="font-semibold text-lg">View CV</p>
+              </div>
+            </a>
+
+            <a
+              href="/cv.pdf"
               download
               className="flex items-center gap-4 p-5 rounded-2xl bg-background/5 border border-background/10 hover:bg-background/10 hover:border-primary/30 transition-all duration-300"
             >
