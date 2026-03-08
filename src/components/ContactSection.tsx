@@ -119,7 +119,7 @@ const ContactSection = () => {
                 onChange={(e) => setForm({ ...form, message: e.target.value })}
                 placeholder="Your message"
                 rows={5}
-                className="bg-background/10 border-background/20 text-foreground placeholder:text-foreground/40 focus:border-primary resize-none"
+                className="bg-card text-card-foreground border-border placeholder:text-muted-foreground focus:border-primary rounded-[5px] px-2.5 py-2.5 resize-none"
                 maxLength={1000}
               />
             </div>
