@@ -7,6 +7,7 @@ export const personalInfo = {
   title: "HRM Student | Data Analytics Enthusiast",
   tagline: "Using data and HR knowledge to support smarter business decisions.",
   email: "izohirul891@gmail.com",
+  email2: "mdzohirulislam3000@gmail.com",
   phone: "01306853224",
   socialLinks: [
     { name: "Facebook", url: "https://www.facebook.com/share/14V5ws9cPYG/?mibextid=wwXIfr", icon: "facebook" },

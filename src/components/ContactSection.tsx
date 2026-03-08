@@ -8,9 +8,9 @@ import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/use-toast";
 import emailjs from "@emailjs/browser";
 
-const SERVICE_ID = "service_vcf8rfh";
-const TEMPLATE_ID = "template_zhje5u8";
-const PUBLIC_KEY = "tpfj_92kWXKz04Uo2";
+const SERVICE_ID = "service_3ynw23f";
+const TEMPLATE_ID = "template_0orbgp6";
+const PUBLIC_KEY = "7C8eoxRe1yEc-ZHjE";
 
 const iconMap: Record<string, React.ElementType> = {
   linkedin: Linkedin,
@@ -151,6 +151,19 @@ const ContactSection = () => {
               <div>
                 <p className="text-xs text-foreground/50 uppercase tracking-wider font-semibold">Email</p>
                 <p className="font-semibold text-lg">{personalInfo.email}</p>
+              </div>
+            </a>
+
+            <a
+              href={`mailto:${personalInfo.email2}`}
+              className="flex items-center gap-4 p-5 rounded-2xl bg-background/5 border border-background/10 hover:bg-background/10 hover:border-primary/30 transition-all duration-300"
+            >
+              <div className="p-3.5 rounded-xl bg-primary/20 text-primary">
+                <Mail size={24} />
+              </div>
+              <div>
+                <p className="text-xs text-foreground/50 uppercase tracking-wider font-semibold">Email</p>
+                <p className="font-semibold text-lg">{personalInfo.email2}</p>
               </div>
             </a>
 
