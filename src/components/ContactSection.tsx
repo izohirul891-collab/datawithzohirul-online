@@ -155,6 +155,19 @@ const ContactSection = () => {
             </a>
 
             <a
+              href={`mailto:${personalInfo.email2}`}
+              className="flex items-center gap-4 p-5 rounded-2xl bg-background/5 border border-background/10 hover:bg-background/10 hover:border-primary/30 transition-all duration-300"
+            >
+              <div className="p-3.5 rounded-xl bg-primary/20 text-primary">
+                <Mail size={24} />
+              </div>
+              <div>
+                <p className="text-xs text-foreground/50 uppercase tracking-wider font-semibold">Email</p>
+                <p className="font-semibold text-lg">{personalInfo.email2}</p>
+              </div>
+            </a>
+
+            <a
               href={`tel:${personalInfo.phone}`}
               className="flex items-center gap-4 p-5 rounded-2xl bg-background/5 border border-background/10 hover:bg-background/10 hover:border-primary/30 transition-all duration-300"
             >
