@@ -1,5 +1,6 @@
 import { personalInfo } from "@/data/portfolioData";
-import { Mail, Phone, Github, Linkedin, Globe, Facebook, Instagram, MessageCircle } from "lucide-react";
+import { Mail, Phone, Github, Linkedin, Globe, Facebook, Instagram, MessageCircle, Send } from "lucide-react";
+import { motion } from "framer-motion";
 
 const iconMap: Record<string, React.ElementType> = {
   linkedin: Linkedin,
@@ -12,59 +13,88 @@ const iconMap: Record<string, React.ElementType> = {
 
 const ContactSection = () => {
   return (
-    <section id="contact" className="py-20 bg-navy">
-      <div className="container mx-auto px-6">
-        <p className="text-primary font-semibold text-sm tracking-wider uppercase text-center mb-2">
-          Contact
-        </p>
-        <h2 className="font-display text-3xl md:text-4xl font-bold text-center mb-12">
-          Let's Work Together
-        </h2>
+    <section id="contact" className="py-24 bg-navy relative overflow-hidden">
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] rounded-full bg-primary/10 blur-[150px] -z-0" />
 
-        <div className="max-w-xl mx-auto space-y-6">
-          <a
+      <div className="container mx-auto px-6 relative z-10">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.5 }}
+          className="text-center mb-14"
+        >
+          <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/20 border border-primary/30 text-primary text-xs font-semibold tracking-wider uppercase mb-4">
+            <Send size={14} />
+            Contact
+          </span>
+          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold">
+            Let's Work Together
+          </h2>
+        </motion.div>
+
+        <div className="max-w-xl mx-auto space-y-5">
+          <motion.a
             href={`mailto:${personalInfo.email}`}
-            className="flex items-center gap-4 p-5 rounded-xl bg-background/5 border border-background/10 hover:bg-background/10 transition-colors"
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.4 }}
+            whileHover={{ scale: 1.02, x: 4 }}
+            className="flex items-center gap-4 p-5 rounded-2xl bg-background/5 border border-background/10 hover:bg-background/10 hover:border-primary/30 transition-all duration-300"
           >
-            <div className="p-3 rounded-lg bg-primary/20 text-primary">
-              <Mail size={22} />
+            <div className="p-3.5 rounded-xl bg-primary/20 text-primary">
+              <Mail size={24} />
             </div>
             <div>
-              <p className="text-xs text-background/60 uppercase tracking-wider">Email</p>
-              <p className="font-medium">{personalInfo.email}</p>
+              <p className="text-xs text-background/50 uppercase tracking-wider font-semibold">Email</p>
+              <p className="font-semibold text-lg">{personalInfo.email}</p>
             </div>
-          </a>
+          </motion.a>
 
-          <a
+          <motion.a
             href={`tel:${personalInfo.phone}`}
-            className="flex items-center gap-4 p-5 rounded-xl bg-background/5 border border-background/10 hover:bg-background/10 transition-colors"
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.4, delay: 0.1 }}
+            whileHover={{ scale: 1.02, x: 4 }}
+            className="flex items-center gap-4 p-5 rounded-2xl bg-background/5 border border-background/10 hover:bg-background/10 hover:border-primary/30 transition-all duration-300"
           >
-            <div className="p-3 rounded-lg bg-primary/20 text-primary">
-              <Phone size={22} />
+            <div className="p-3.5 rounded-xl bg-primary/20 text-primary">
+              <Phone size={24} />
             </div>
             <div>
-              <p className="text-xs text-background/60 uppercase tracking-wider">Phone</p>
-              <p className="font-medium">{personalInfo.phone}</p>
+              <p className="text-xs text-background/50 uppercase tracking-wider font-semibold">Phone</p>
+              <p className="font-semibold text-lg">{personalInfo.phone}</p>
             </div>
-          </a>
+          </motion.a>
 
           {personalInfo.socialLinks.length > 0 && (
-            <div className="flex justify-center gap-4 pt-4">
+            <motion.div
+              className="flex justify-center gap-4 pt-6"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+            >
               {personalInfo.socialLinks.map((link, i) => {
                 const Icon = iconMap[link.icon] || Globe;
                 return (
-                  <a
+                  <motion.a
                     key={i}
                     href={link.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-3 rounded-lg bg-background/10 hover:bg-primary/20 text-background/80 hover:text-primary transition-colors"
+                    whileHover={{ scale: 1.15, y: -3 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="p-3.5 rounded-xl bg-background/10 hover:bg-primary/20 text-background/70 hover:text-primary transition-all duration-300 border border-transparent hover:border-primary/30"
                   >
                     <Icon size={22} />
-                  </a>
+                  </motion.a>
                 );
               })}
-            </div>
+            </motion.div>
           )}
         </div>
       </div>
