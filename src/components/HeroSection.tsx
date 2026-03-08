@@ -1,7 +1,7 @@
 import { personalInfo } from "@/data/portfolioData";
 import { Button } from "@/components/ui/button";
 import profilePhoto from "@/assets/profile-photo.png";
-import { ArrowDown, Mail, Sparkles } from "lucide-react";
+import { ArrowDown, Download, Mail, Sparkles } from "lucide-react";
 import { motion } from "framer-motion";
 
 const HeroSection = () => {
