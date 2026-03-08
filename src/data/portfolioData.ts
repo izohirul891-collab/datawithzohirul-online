@@ -54,21 +54,21 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    title: "Sales Data Analysis Dashboard",
-    description: "Comprehensive sales analytics dashboard analyzing revenue trends, regional performance, and key business KPIs using interactive visualizations.",
-    tools: ["Power BI", "Excel", "SQL"],
-    image: "project-sales",
-  },
-  {
-    title: "HR Data Analysis",
-    description: "In-depth analysis of employee metrics including attrition rates, recruitment funnels, and workforce demographics to optimize HR strategies.",
+    title: "HR Data Analysis Dashboard",
+    description: "Interactive dashboard analyzing employee metrics including attrition rates, recruitment funnels, and workforce demographics to optimize HR strategies.",
     tools: ["Power BI", "Excel", "Data Cleaning"],
     image: "project-hr",
   },
   {
-    title: "Excel Business Analysis",
-    description: "Data-driven business analysis using advanced Excel techniques including pivot tables, VLOOKUP, and conditional formatting for actionable insights.",
+    title: "Excel Data Analysis Project",
+    description: "Data-driven analysis using advanced Excel techniques including pivot tables, VLOOKUP, and conditional formatting for actionable business insights.",
     tools: ["Excel", "Power Query", "Data Visualization"],
+    image: "project-sales",
+  },
+  {
+    title: "Business Data Insights",
+    description: "Comprehensive business analytics project uncovering key trends, regional performance patterns, and KPIs using interactive data visualizations.",
+    tools: ["Power BI", "Excel", "SQL"],
     image: "project-agriculture",
   },
 ];

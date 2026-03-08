@@ -102,6 +102,12 @@ const HeroSection = () => {
                   View Projects
                 </a>
               </Button>
+              <Button size="lg" asChild className="border-2 border-white/30 bg-transparent hover:bg-white/10 text-white rounded-full font-semibold">
+                <a href="/cv.pdf" download>
+                  <Download size={18} />
+                  Download CV
+                </a>
+              </Button>
             </motion.div>
 
             {/* Stats row */}
