@@ -9,10 +9,9 @@ export const personalInfo = {
   email: "izohirul891@gmail.com",
   phone: "01306853224",
   socialLinks: [
+    { name: "Facebook", url: "https://facebook.com/yourprofile", icon: "facebook" },
     { name: "LinkedIn", url: "https://linkedin.com/in/yourprofile", icon: "linkedin" },
     { name: "GitHub", url: "https://github.com/yourprofile", icon: "github" },
-    { name: "Facebook", url: "https://facebook.com/yourprofile", icon: "facebook" },
-    { name: "Instagram", url: "https://instagram.com/yourprofile", icon: "instagram" },
     { name: "WhatsApp", url: "https://wa.me/1306853224", icon: "whatsapp" },
   ] as { name: string; url: string; icon: string }[],
 };
@@ -33,19 +32,17 @@ export interface Skill {
 export const hrSkills: Skill[] = [
   { name: "Human Resource Management", level: 90 },
   { name: "Recruitment & Selection", level: 85 },
-  { name: "Organizational Behavior", level: 80 },
+  { name: "HR Analytics", level: 80 },
   { name: "Workforce Planning", level: 75 },
-  // Add more HR skills here
 ];
 
 export const dataSkills: Skill[] = [
   { name: "Microsoft Excel", level: 90 },
-  { name: "Power BI", level: 80 },
+  { name: "Power BI", level: 85 },
+  { name: "Power Query", level: 80 },
   { name: "Data Analysis", level: 85 },
-  { name: "Data Cleaning", level: 80 },
   { name: "Data Visualization", level: 85 },
   { name: "Basic SQL", level: 70 },
-  // Add more data skills here
 ];
 
 export interface Project {
@@ -69,12 +66,11 @@ export const projects: Project[] = [
     image: "project-hr",
   },
   {
-    title: "Agriculture Data Analysis",
-    description: "Data-driven analysis of agricultural trends, crop yields, and weather patterns to support informed farming decisions.",
-    tools: ["Excel", "Power BI", "Data Visualization"],
+    title: "Excel Business Analysis",
+    description: "Data-driven business analysis using advanced Excel techniques including pivot tables, VLOOKUP, and conditional formatting for actionable insights.",
+    tools: ["Excel", "Power Query", "Data Visualization"],
     image: "project-agriculture",
   },
-  // Add more projects here
 ];
 
 export interface Education {
@@ -91,7 +87,6 @@ export const education: Education[] = [
     department: "Human Resource Management",
     year: "Currently Pursuing",
   },
-  // Add more education entries here
 ];
 
 export interface Certification {
@@ -101,10 +96,7 @@ export interface Certification {
   link?: string;
 }
 
-export const certifications: Certification[] = [
-  // Add certifications here, e.g.:
-  // { name: "Google Data Analytics", issuer: "Google", date: "2024", link: "https://..." },
-];
+export const certifications: Certification[] = [];
 
 export interface Experience {
   title: string;
@@ -113,10 +105,7 @@ export interface Experience {
   description: string;
 }
 
-export const experiences: Experience[] = [
-  // Add experiences here, e.g.:
-  // { title: "HR Intern", company: "ABC Corp", duration: "Jan 2024 - Present", description: "..." },
-];
+export const experiences: Experience[] = [];
 
 export const navLinks = [
   { label: "Home", href: "#home" },

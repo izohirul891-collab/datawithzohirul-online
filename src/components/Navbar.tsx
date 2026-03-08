@@ -26,9 +26,8 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
-        <a href="#home" className="font-display text-xl font-bold text-foreground">
-          {personalInfo.name.split(" ").pop()}
-          <span className="text-primary">.</span>
+        <a href="#home" className="font-display text-lg font-bold text-foreground tracking-tight">
+          MD. ZOHIRUL ISLAM
         </a>
 
         {/* Desktop Nav */}
