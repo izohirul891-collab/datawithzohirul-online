@@ -1,7 +1,7 @@
 import { personalInfo } from "@/data/portfolioData";
 import { Button } from "@/components/ui/button";
 import profilePhoto from "@/assets/profile-photo.png";
-import { ArrowDown, Mail, Sparkles } from "lucide-react";
+import { ArrowDown, Download, Mail, Sparkles } from "lucide-react";
 import { motion } from "framer-motion";
 
 const HeroSection = () => {
@@ -100,6 +100,12 @@ const HeroSection = () => {
                 <a href="#projects">
                   <ArrowDown size={18} />
                   View Projects
+                </a>
+              </Button>
+              <Button size="lg" asChild className="border-2 border-white/30 bg-transparent hover:bg-white/10 text-white rounded-full font-semibold">
+                <a href="/cv.pdf" download>
+                  <Download size={18} />
+                  Download CV
                 </a>
               </Button>
             </motion.div>
