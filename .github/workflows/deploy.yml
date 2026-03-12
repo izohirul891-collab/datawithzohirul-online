@@ -1,4 +1,4 @@
-name: Deploy to Netlify
+name: Deploy Portfolio Website
 
 on:
   push:
@@ -27,11 +27,7 @@ jobs:
           VITE_EMAILJS_PUBLIC_KEY: ${{ secrets.VITE_EMAILJS_PUBLIC_KEY }}
         run: npm run build
 
-      - name: Deploy to Netlify
-        uses: nwtgck/actions-netlify@v3
-        with:
-          publish-dir: ./dist
-          production-deploy: true
+      - name: Deploy to Lovable
+        run: npx lovable-cli deploy --project datawithzohirul --dir dist
         env:
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          LOVABLE_TOKEN: ${{ secrets.LOVABLE_TOKEN }}
