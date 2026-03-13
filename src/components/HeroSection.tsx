@@ -93,6 +93,10 @@ const HeroSection = () => {
                   Download CV
                 </a>
               </Button>
+              <Button size="lg" className="border-2 border-border bg-transparent hover:bg-secondary text-foreground rounded-full font-semibold" onClick={() => window.print()}>
+                <Download size={18} />
+                Download Portfolio
+              </Button>
             </motion.div>
 
             {/* Stats row */}
