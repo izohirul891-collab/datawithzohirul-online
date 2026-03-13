@@ -3,12 +3,14 @@ import { ProjectCard } from "@/components/ProjectCard";
 import projectSales from "@/assets/project-sales.jpg";
 import projectHr from "@/assets/project-hr.jpg";
 import projectAgriculture from "@/assets/project-agriculture.jpg";
+import projectDoughyDreams from "@/assets/project-doughy-dreams.png";
 import { motion } from "framer-motion";
 
 const imageMap: Record<string, string> = {
   "project-sales": projectSales,
   "project-hr": projectHr,
   "project-agriculture": projectAgriculture,
+  "project-doughy-dreams": projectDoughyDreams,
 };
 
 const linkMap: Record<string, string> = {
