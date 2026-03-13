@@ -45,7 +45,7 @@ const DoughyDreamsProject = () => {
 
               <h2 className="font-display text-xl font-bold text-foreground mb-4">Technologies Used</h2>
               <div className="flex flex-wrap gap-2 mb-6">
-                {["Power BI", "Excel", "Data Visualization", "SQL"].map((tool) => (
+                {["Data Cleaning", "Excel", "Data Visualization"].map((tool) => (
                   <span
                     key={tool}
                     className="px-4 py-2 text-sm font-semibold rounded-full bg-primary/10 text-primary border border-primary/20"

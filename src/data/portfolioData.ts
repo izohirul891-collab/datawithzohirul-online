@@ -63,7 +63,7 @@ export const projects: Project[] = [
   {
     title: "Doughy Dreams Sales Dashboard",
     description: "Interactive sales analytics dashboard visualizing KPIs, revenue trends, product performance, location-based sales, payment methods, top buyers, and demographic breakdowns for data-driven business decisions.",
-    tools: ["Power BI", "Excel", "Data Visualization", "SQL"],
+    tools: ["Data Cleaning", "Excel", "Data Visualization"],
     image: "project-doughy-dreams",
   },
 ];
