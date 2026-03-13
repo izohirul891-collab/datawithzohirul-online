@@ -61,18 +61,6 @@ export const projects: Project[] = [
     image: "project-hr",
   },
   {
-    title: "Excel Data Analysis Project",
-    description: "Data-driven analysis using advanced Excel techniques including pivot tables, VLOOKUP, and conditional formatting for actionable business insights.",
-    tools: ["Excel", "Power Query", "Data Visualization"],
-    image: "project-sales",
-  },
-  {
-    title: "Business Data Insights",
-    description: "Comprehensive business analytics project uncovering key trends, regional performance patterns, and KPIs using interactive data visualizations.",
-    tools: ["Power BI", "Excel", "SQL"],
-    image: "project-agriculture",
-  },
-  {
     title: "Doughy Dreams Sales Dashboard",
     description: "Interactive sales analytics dashboard visualizing KPIs, revenue trends, product performance, location-based sales, payment methods, top buyers, and demographic breakdowns for data-driven business decisions.",
     tools: ["Power BI", "Excel", "Data Visualization", "SQL"],
