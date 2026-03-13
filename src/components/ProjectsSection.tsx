@@ -17,6 +17,7 @@ const linkMap: Record<string, string> = {
   "HR Data Analysis Dashboard": "/projects/portfolio",
   "Excel Data Analysis Project": "/projects/dashboard",
   "Business Data Insights": "/projects/portfolio",
+  "Doughy Dreams Sales Dashboard": "/projects/doughy-dreams",
 };
 
 const ProjectsSection = () => {
