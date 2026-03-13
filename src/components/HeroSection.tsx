@@ -3,8 +3,11 @@ import { Button } from "@/components/ui/button";
 import profilePhoto from "@/assets/profile-photo.png";
 import { ArrowDown, Download, Mail, Sparkles } from "lucide-react";
 import { motion } from "framer-motion";
+import { useState } from "react";
+import DownloadPortfolioDialog from "./DownloadPortfolioDialog";
 
 const HeroSection = () => {
+  const [downloadOpen, setDownloadOpen] = useState(false);
   return (
     <section id="home" className="min-h-screen flex items-center pt-20 relative overflow-hidden bg-background">
       {/* Subtle background accents */}
@@ -93,7 +96,7 @@ const HeroSection = () => {
                   Download CV
                 </a>
               </Button>
-              <Button size="lg" className="border-2 border-border bg-transparent hover:bg-secondary text-foreground rounded-full font-semibold" onClick={() => window.print()}>
+              <Button size="lg" className="border-2 border-border bg-transparent hover:bg-secondary text-foreground rounded-full font-semibold" onClick={() => setDownloadOpen(true)}>
                 <Download size={18} />
                 Download Portfolio
               </Button>
@@ -168,6 +171,8 @@ const HeroSection = () => {
           </motion.div>
         </div>
       </div>
+
+      <DownloadPortfolioDialog open={downloadOpen} onOpenChange={setDownloadOpen} />
     </section>
   );
 };

@@ -130,4 +130,11 @@ html {
     break-inside: avoid;
     page-break-inside: avoid;
   }
+  [data-print-hidden="true"] {
+    display: none !important;
+  }
+  @page {
+    size: var(--print-width, A4) var(--print-height, auto);
+    margin: 15mm;
+  }
 }
