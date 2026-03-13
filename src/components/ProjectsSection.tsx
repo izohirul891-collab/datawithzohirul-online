@@ -3,18 +3,21 @@ import { ProjectCard } from "@/components/ProjectCard";
 import projectSales from "@/assets/project-sales.jpg";
 import projectHr from "@/assets/project-hr.jpg";
 import projectAgriculture from "@/assets/project-agriculture.jpg";
+import projectDoughyDreams from "@/assets/project-doughy-dreams.png";
 import { motion } from "framer-motion";
 
 const imageMap: Record<string, string> = {
   "project-sales": projectSales,
   "project-hr": projectHr,
   "project-agriculture": projectAgriculture,
+  "project-doughy-dreams": projectDoughyDreams,
 };
 
 const linkMap: Record<string, string> = {
   "HR Data Analysis Dashboard": "/projects/portfolio",
   "Excel Data Analysis Project": "/projects/dashboard",
   "Business Data Insights": "/projects/portfolio",
+  "Doughy Dreams Sales Dashboard": "/projects/doughy-dreams",
 };
 
 const ProjectsSection = () => {
