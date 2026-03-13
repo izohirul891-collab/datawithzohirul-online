@@ -171,6 +171,8 @@ const HeroSection = () => {
           </motion.div>
         </div>
       </div>
+
+      <DownloadPortfolioDialog open={downloadOpen} onOpenChange={setDownloadOpen} />
     </section>
   );
 };
