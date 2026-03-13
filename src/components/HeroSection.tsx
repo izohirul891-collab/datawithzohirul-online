@@ -3,8 +3,11 @@ import { Button } from "@/components/ui/button";
 import profilePhoto from "@/assets/profile-photo.png";
 import { ArrowDown, Download, Mail, Sparkles } from "lucide-react";
 import { motion } from "framer-motion";
+import { useState } from "react";
+import DownloadPortfolioDialog from "./DownloadPortfolioDialog";
 
 const HeroSection = () => {
+  const [downloadOpen, setDownloadOpen] = useState(false);
   return (
     <section id="home" className="min-h-screen flex items-center pt-20 relative overflow-hidden bg-background">
       {/* Subtle background accents */}
