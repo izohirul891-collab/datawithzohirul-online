@@ -1,6 +1,8 @@
 import { personalInfo } from "@/data/portfolioData";
 import { Button } from "@/components/ui/button";
 import profilePhoto from "@/assets/profile-photo.png";
+import iconCv from "@/assets/icon-cv.png";
+import iconPortfolio from "@/assets/icon-portfolio.png";
 import { ArrowDown, Download, Mail, Sparkles } from "lucide-react";
 import { motion } from "framer-motion";
 import { useState } from "react";
@@ -102,6 +104,25 @@ const HeroSection = () => {
                   <Download size={18} />
                   Download Portfolio
                 </Button>
+              </div>
+
+              {/* Quick Overview & Detailed Showcase cards */}
+              <div className="flex gap-8 pt-4">
+                <a href="/cv.pdf" download className="group flex flex-col items-center gap-2 cursor-pointer">
+                  <p className="font-display font-bold text-sm text-foreground">Quick Overview</p>
+                  <div className="w-20 h-20 rounded-xl bg-secondary/60 border border-border p-2 group-hover:shadow-md transition-shadow">
+                    <img src={iconCv} alt="CV Document" className="w-full h-full object-contain" />
+                  </div>
+                  <span className="text-sm text-primary underline underline-offset-4 font-medium">Download CV</span>
+                </a>
+                <div className="border-l border-dashed border-border" />
+                <button onClick={() => setDownloadOpen(true)} className="group flex flex-col items-center gap-2 cursor-pointer bg-transparent border-none">
+                  <p className="font-display font-bold text-sm text-foreground">Detailed Showcase</p>
+                  <div className="w-20 h-20 rounded-xl bg-secondary/60 border border-border p-2 group-hover:shadow-md transition-shadow">
+                    <img src={iconPortfolio} alt="Portfolio Book" className="w-full h-full object-contain" />
+                  </div>
+                  <span className="text-sm text-primary underline underline-offset-4 font-medium">Download Portfolio</span>
+                </button>
               </div>
             </motion.div>
 
