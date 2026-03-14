@@ -107,21 +107,21 @@ const HeroSection = () => {
               </div>
 
               {/* Quick Overview & Detailed Showcase cards */}
-              <div className="flex gap-8 pt-4">
-                <a href="/cv.pdf" download className="group flex flex-col items-center gap-2 cursor-pointer">
-                  <p className="font-display font-bold text-sm text-foreground">Quick Overview</p>
-                  <div className="w-20 h-20 rounded-xl bg-secondary/60 border border-border p-2 group-hover:shadow-md transition-shadow">
+              <div className="flex gap-12 pt-6">
+                <a href="/cv.pdf" download className="group flex flex-col items-center gap-3 cursor-pointer">
+                  <p className="font-display font-bold text-base text-foreground">Quick Overview</p>
+                  <div className="w-28 h-28 rounded-2xl bg-secondary/60 border border-border p-3 group-hover:shadow-lg group-hover:scale-105 transition-all duration-200">
                     <img src={iconCv} alt="CV Document" className="w-full h-full object-contain" />
                   </div>
                   <span className="text-sm text-primary underline underline-offset-4 font-medium">Download CV</span>
                 </a>
                 <div className="border-l border-dashed border-border" />
-                <button onClick={() => setDownloadOpen(true)} className="group flex flex-col items-center gap-2 cursor-pointer bg-transparent border-none">
-                  <p className="font-display font-bold text-sm text-foreground">Detailed Showcase</p>
-                  <div className="w-20 h-20 rounded-xl bg-secondary/60 border border-border p-2 group-hover:shadow-md transition-shadow">
+                <button onClick={() => setDownloadOpen(true)} className="group flex flex-col items-center gap-3 cursor-pointer bg-transparent border-none">
+                  <p className="font-display font-bold text-base text-foreground">Detailed Showcase</p>
+                  <div className="w-28 h-28 rounded-2xl bg-secondary/60 border border-border p-3 group-hover:shadow-lg group-hover:scale-105 transition-all duration-200">
                     <img src={iconPortfolio} alt="Portfolio Book" className="w-full h-full object-contain" />
                   </div>
-                  <span className="text-sm text-primary underline underline-offset-4 font-medium">Download Portfolio</span>
+                  <span className="text-sm text-primary underline underline-offset-4 font-medium">Detailed Portfolio</span>
                 </button>
               </div>
             </motion.div>
