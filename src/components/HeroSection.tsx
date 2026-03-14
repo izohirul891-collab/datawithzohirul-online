@@ -90,16 +90,19 @@ const HeroSection = () => {
                   View Projects
                 </a>
               </Button>
-              <Button size="lg" asChild className="border-2 border-border bg-transparent hover:bg-secondary text-foreground rounded-full font-semibold">
-                <a href="/cv.pdf" download>
+              <div className="flex items-center gap-3">
+                <Button size="lg" asChild variant="heroOutline">
+                  <a href="/cv.pdf" download>
+                    <Download size={18} />
+                    Download CV
+                  </a>
+                </Button>
+                <span className="text-muted-foreground font-medium">or</span>
+                <Button size="lg" variant="hero" onClick={() => setDownloadOpen(true)}>
                   <Download size={18} />
-                  Download CV
-                </a>
-              </Button>
-              <Button size="lg" className="border-2 border-border bg-transparent hover:bg-secondary text-foreground rounded-full font-semibold" onClick={() => setDownloadOpen(true)}>
-                <Download size={18} />
-                Download Portfolio
-              </Button>
+                  Download Portfolio
+                </Button>
+              </div>
             </motion.div>
 
             {/* Stats row */}
