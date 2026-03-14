@@ -1,6 +1,8 @@
 import { personalInfo } from "@/data/portfolioData";
 import { Button } from "@/components/ui/button";
 import profilePhoto from "@/assets/profile-photo.png";
+import iconCv from "@/assets/icon-cv.png";
+import iconPortfolio from "@/assets/icon-portfolio.png";
 import { ArrowDown, Download, Mail, Sparkles } from "lucide-react";
 import { motion } from "framer-motion";
 import { useState } from "react";
