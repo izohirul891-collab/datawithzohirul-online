@@ -4,6 +4,7 @@ import projectSales from "@/assets/project-sales.jpg";
 import projectHr from "@/assets/project-hr.jpg";
 import projectAgriculture from "@/assets/project-agriculture.jpg";
 import projectDoughyDreams from "@/assets/project-doughy-dreams.png";
+import projectUrbanBrew from "@/assets/project-urban-brew.png";
 import { motion } from "framer-motion";
 
 const imageMap: Record<string, string> = {
