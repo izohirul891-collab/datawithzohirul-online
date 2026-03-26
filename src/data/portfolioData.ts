@@ -66,6 +66,12 @@ export const projects: Project[] = [
     tools: ["Data Cleaning", "Excel", "Data Visualization"],
     image: "project-doughy-dreams",
   },
+  {
+    title: "Urban Brew Co. Business Dashboard",
+    description: "Comprehensive business intelligence dashboard for Urban Brew Co. featuring executive metrics, category insights, trend analysis, geographic revenue distribution, and profitability comparison across multiple dimensions.",
+    tools: ["Data Cleaning", "Excel", "Data Visualization"],
+    image: "project-urban-brew",
+  },
 ];
 
 export interface Education {
