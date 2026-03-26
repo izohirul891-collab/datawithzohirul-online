@@ -12,11 +12,13 @@ const imageMap: Record<string, string> = {
   "project-hr": projectHr,
   "project-agriculture": projectAgriculture,
   "project-doughy-dreams": projectDoughyDreams,
+  "project-urban-brew": projectUrbanBrew,
 };
 
 const linkMap: Record<string, string> = {
   "HR Data Analysis Dashboard": "/projects/portfolio",
   "Doughy Dreams Sales Dashboard": "/projects/doughy-dreams",
+  "Urban Brew Co. Business Dashboard": "/projects/urban-brew",
 };
 
 const ProjectsSection = () => {
