@@ -38,10 +38,11 @@ const UrbanBrewProject = () => {
             <div className="prose prose-lg max-w-none">
               <h2 className="font-display text-xl font-bold text-foreground mb-4">Overview</h2>
               <p className="text-muted-foreground mb-6 leading-relaxed">
-                This interactive business intelligence dashboard provides a comprehensive overview of 
-                Urban Brew Co.'s performance across multiple dimensions. Designed with a clean and modern 
-                interface, it enables dynamic analysis through filters for year, city, and month, making 
-                data exploration intuitive and actionable.
+                Urban Brew Co. is a fictional US-based coffee retail chain used for data analysis and 
+                dashboard visualization purposes. This interactive business intelligence dashboard provides 
+                a comprehensive overview of Urban Brew Co.'s performance across multiple dimensions. Designed 
+                with a clean and modern interface, it enables dynamic analysis through filters for year, city, 
+                and month, making data exploration intuitive and actionable.
               </p>
 
               <h2 className="font-display text-xl font-bold text-foreground mb-4">Technologies Used</h2>
