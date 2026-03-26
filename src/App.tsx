@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import PortfolioProject from "./pages/PortfolioProject";
 import DashboardProject from "./pages/DashboardProject";
 import DoughyDreamsProject from "./pages/DoughyDreamsProject";
+import UrbanBrewProject from "./pages/UrbanBrewProject";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
