@@ -1,75 +1,77 @@
-# Welcome to your Lovable project
+# 📊 MD. Zohirul Islam — Portfolio Website
 
-## Project info
+A modern, animated personal portfolio built with **React**, **TypeScript**, **Vite**, and **Tailwind CSS**.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+🔗 **Live Site:** [datawithzohirul.lovable.app](https://datawithzohirul.lovable.app)
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## ✨ Features
 
-**Use Lovable**
+- 🎬 Cinematic entry animations (Framer Motion)
+- ⌨️ Typewriter text effect on hero section
+- 📱 Fully responsive design (mobile + desktop)
+- 📂 Project showcase with dedicated detail pages
+- 🎓 Education & experience timeline
+- 📧 Contact form with EmailJS integration
+- 📥 Download CV & Portfolio options
+- 🧭 Smooth scroll navigation
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## 🛠️ Tech Stack
 
-Changes made via Lovable will be committed automatically to this repo.
+| Category | Tools |
+|----------|-------|
+| Frontend | React, TypeScript, Vite |
+| Styling | Tailwind CSS, shadcn/ui |
+| Animation | Framer Motion |
+| Email | EmailJS |
+| Deployment | Netlify / Lovable |
 
-**Use your preferred IDE**
+## 📂 Projects Included
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- **Portfolio Website** — This React + Vite portfolio
+- **Doughy Dreams Sales Dashboard** — Excel-based sales analytics dashboard
+- **Urban Brew Co. Business Dashboard** — Coffee retail chain data visualization
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 🚀 Getting Started
 
-Follow these steps:
+```bash
+# Clone the repository
+git clone https://github.com/izohirul891-collab/datawithzohirul.git
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+# Navigate to the project
+cd datawithzohirul
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Install dependencies
+npm install
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+## 🔧 Environment Variables
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Set these in your deployment platform (Netlify/Lovable):
 
-**Use GitHub Codespaces**
+| Variable | Description |
+|----------|-------------|
+| `VITE_EMAILJS_SERVICE_ID` | EmailJS Service ID |
+| `VITE_EMAILJS_TEMPLATE_ID` | EmailJS Template ID |
+| `VITE_EMAILJS_PUBLIC_KEY` | EmailJS Public Key |
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 📦 Build & Deploy
 
-## What technologies are used for this project?
+```bash
+npm run build    # Output → dist/
+```
 
-This project is built with:
+- **Netlify:** Auto-deploys from `main` branch
+- **GitHub Actions:** CI/CD workflow included in `.github/workflows/deploy.yml`
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
 ## 📊 Dashboard Preview
+
 ![Dashboard](dashboard.png)
+
+---
+
+**Made with ❤️ by MD. Zohirul Islam**
