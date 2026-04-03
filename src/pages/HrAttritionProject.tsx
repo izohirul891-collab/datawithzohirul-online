@@ -79,7 +79,7 @@ const HrAttritionProject = () => {
                 <p className="text-sm text-muted-foreground mb-4">This dashboard supports dynamic filtering across multiple dimensions:</p>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
                 {["Job Role", "Department", "Marital Status", "Performance Status"].map((filter) => (
-                  <span key={filter} className="px-4 py-2 text-sm font-semibold rounded-full bg-accent/10 text-accent-foreground border border-accent/20">
+                  <span key={filter} className="flex items-center justify-center px-4 py-3 text-sm font-bold rounded-xl bg-primary/10 text-primary border-2 border-primary/25 shadow-sm hover:bg-primary/20 hover:scale-105 transition-all duration-200 cursor-default">
                     {filter}
                   </span>
                 ))}
