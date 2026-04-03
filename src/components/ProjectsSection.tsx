@@ -5,6 +5,7 @@ import projectHr from "@/assets/project-hr.jpg";
 import projectAgriculture from "@/assets/project-agriculture.jpg";
 import projectDoughyDreams from "@/assets/project-doughy-dreams.png";
 import projectUrbanBrew from "@/assets/project-urban-brew.png";
+import projectHrAttrition from "@/assets/project-hr-attrition.png";
 import { motion } from "framer-motion";
 
 const imageMap: Record<string, string> = {
@@ -13,12 +14,14 @@ const imageMap: Record<string, string> = {
   "project-agriculture": projectAgriculture,
   "project-doughy-dreams": projectDoughyDreams,
   "project-urban-brew": projectUrbanBrew,
+  "project-hr-attrition": projectHrAttrition,
 };
 
 const linkMap: Record<string, string> = {
   "HR Data Analysis Dashboard": "/projects/portfolio",
   "Doughy Dreams Sales Dashboard": "/projects/doughy-dreams",
   "Urban Brew Co. Business Dashboard": "/projects/urban-brew",
+  "Employee Attrition Analysis Dashboard": "/projects/hr-attrition",
 };
 
 const ProjectsSection = () => {
