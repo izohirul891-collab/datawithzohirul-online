@@ -92,6 +92,7 @@ const HrAttritionProject = () => {
                     {tool}
                   </span>
                 ))}
+                </div>
               </div>
             </div>
           </div>
