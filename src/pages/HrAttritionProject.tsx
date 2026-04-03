@@ -75,9 +75,11 @@ const HrAttritionProject = () => {
               </ul>
 
               <h2 className="font-display text-xl font-bold text-foreground mb-4">Interactive Filters</h2>
-              <div className="flex flex-wrap gap-2 mb-6">
+              <div className="rounded-2xl border-2 border-primary/30 bg-gradient-to-br from-primary/5 to-accent/5 p-6 mb-6">
+                <p className="text-sm text-muted-foreground mb-4">This dashboard supports dynamic filtering across multiple dimensions:</p>
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
                 {["Job Role", "Department", "Marital Status", "Performance Status"].map((filter) => (
-                  <span key={filter} className="px-4 py-2 text-sm font-semibold rounded-full bg-accent/10 text-accent-foreground border border-accent/20">
+                  <span key={filter} className="flex items-center justify-center px-4 py-3 text-sm font-bold rounded-xl bg-primary/10 text-primary border-2 border-primary/25 shadow-sm hover:bg-primary/20 hover:scale-105 transition-all duration-200 cursor-default">
                     {filter}
                   </span>
                 ))}
@@ -90,6 +92,7 @@ const HrAttritionProject = () => {
                     {tool}
                   </span>
                 ))}
+                </div>
               </div>
             </div>
           </div>
