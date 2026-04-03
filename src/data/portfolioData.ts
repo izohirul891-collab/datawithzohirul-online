@@ -61,6 +61,12 @@ export const projects: Project[] = [
     image: "project-hr",
   },
   {
+    title: "Employee Attrition Analysis Dashboard",
+    description: "Comprehensive HR analytics dashboard uncovering attrition patterns across income levels, job roles, departments, age groups, and tenure to support data-driven retention strategies.",
+    tools: ["Power BI", "Excel", "HR Analytics", "Data Visualization"],
+    image: "project-hr-attrition",
+  },
+  {
     title: "Doughy Dreams Sales Dashboard",
     description: "Interactive sales analytics dashboard visualizing KPIs, revenue trends, product performance, location-based sales, payment methods, top buyers, and demographic breakdowns for data-driven business decisions.",
     tools: ["Data Cleaning", "Excel", "Data Visualization"],
