@@ -14,6 +14,7 @@ const imageMap: Record<string, string> = {
   "project-agriculture": projectAgriculture,
   "project-doughy-dreams": projectDoughyDreams,
   "project-urban-brew": projectUrbanBrew,
+  "project-hr-attrition": projectHrAttrition,
 };
 
 const linkMap: Record<string, string> = {
