@@ -31,10 +31,12 @@ export interface Skill {
 }
 
 export const hrSkills: Skill[] = [
-  { name: "Human Resource Management", level: 90 },
-  { name: "Recruitment & Selection", level: 85 },
-  { name: "HR Analytics", level: 80 },
-  { name: "Workforce Planning", level: 75 },
+  { name: "HR Analytics (Excel & Power BI)", level: 80 },
+  { name: "Workforce Analytics", level: 75 },
+  { name: "Recruitment Analytics", level: 70 },
+  { name: "Employee Engagement Analytics", level: 65 },
+  { name: "Attrition Analysis (Excel & Power BI)", level: 65 },
+  { name: "Workforce Planning Analytics", level: 60 },
 ];
 
 export const dataSkills: Skill[] = [
