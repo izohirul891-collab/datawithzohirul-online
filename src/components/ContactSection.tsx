@@ -42,21 +42,29 @@ const ContactSection = () => {
       return;
     }
     setSending(true);
-    try {
-      await emailjs.send(SERVICE_ID, TEMPLATE_ID, {
-        from_name: form.name,
-        from_email: form.email,
-        subject: form.subject,
-        message: form.message,
-      }, PUBLIC_KEY);
+    const templateParams = {
+      from_name: form.name,
+      from_email: form.email,
+      subject: form.subject,
+      message: form.message,
+    };
+    let sent = false;
+    for (const account of EMAIL_ACCOUNTS) {
+      try {
+        await emailjs.send(account.serviceId, account.templateId, templateParams, account.publicKey);
+        sent = true;
+        break;
+      } catch (error) {
+        console.error("EmailJS error with account:", account.serviceId, error);
+      }
+    }
+    if (sent) {
       toast({ title: "Message sent!", description: "Thank you for reaching out." });
       setForm({ name: "", email: "", subject: "", message: "" });
-    } catch (error) {
-      console.error("EmailJS error:", error);
+    } else {
       toast({ title: "Failed to send message", description: "Please try again later.", variant: "destructive" });
-    } finally {
-      setSending(false);
     }
+    setSending(false);
   };
 
   return (
