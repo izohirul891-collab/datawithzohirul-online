@@ -4,7 +4,7 @@
 
 export const personalInfo = {
   name: "MD. ZOHIRUL ISLAM",
-  title: "HRM Student | Data Analytics Enthusiast",
+  title: "Turning HR Data into Actionable Insights",
   tagline: "Using data and HR knowledge to support smarter business decisions.",
   email: "izohirul891@gmail.com",
   email2: "mdzohirulislam3000@gmail.com",
