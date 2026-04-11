@@ -8,9 +8,18 @@ import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/use-toast";
 import emailjs from "@emailjs/browser";
 
-const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID || "";
-const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID || "";
-const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY || "";
+const EMAIL_ACCOUNTS = [
+  {
+    serviceId: "service_vcf8rfh",
+    templateId: "template_zhje5u8",
+    publicKey: "tpfj_92kWXKz04Uo2",
+  },
+  {
+    serviceId: "service_3ynw23f",
+    templateId: "template_0orbgp6",
+    publicKey: "7C8eoxRe1yEc-ZHjE",
+  },
+];
 
 const iconMap: Record<string, React.ElementType> = {
   linkedin: Linkedin,
@@ -33,21 +42,29 @@ const ContactSection = () => {
       return;
     }
     setSending(true);
-    try {
-      await emailjs.send(SERVICE_ID, TEMPLATE_ID, {
-        from_name: form.name,
-        from_email: form.email,
-        subject: form.subject,
-        message: form.message,
-      }, PUBLIC_KEY);
+    const templateParams = {
+      from_name: form.name,
+      from_email: form.email,
+      subject: form.subject,
+      message: form.message,
+    };
+    let sent = false;
+    for (const account of EMAIL_ACCOUNTS) {
+      try {
+        await emailjs.send(account.serviceId, account.templateId, templateParams, account.publicKey);
+        sent = true;
+        break;
+      } catch (error) {
+        console.error("EmailJS error with account:", account.serviceId, error);
+      }
+    }
+    if (sent) {
       toast({ title: "Message sent!", description: "Thank you for reaching out." });
       setForm({ name: "", email: "", subject: "", message: "" });
-    } catch (error) {
-      console.error("EmailJS error:", error);
+    } else {
       toast({ title: "Failed to send message", description: "Please try again later.", variant: "destructive" });
-    } finally {
-      setSending(false);
     }
+    setSending(false);
   };
 
   return (
