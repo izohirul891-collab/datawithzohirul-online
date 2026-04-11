@@ -8,9 +8,18 @@ import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/use-toast";
 import emailjs from "@emailjs/browser";
 
-const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID || "";
-const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID || "";
-const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY || "";
+const EMAIL_ACCOUNTS = [
+  {
+    serviceId: "service_vcf8rfh",
+    templateId: "template_zhje5u8",
+    publicKey: "tpfj_92kWXKz04Uo2",
+  },
+  {
+    serviceId: "service_3ynw23f",
+    templateId: "template_0orbgp6",
+    publicKey: "7C8eoxRe1yEc-ZHjE",
+  },
+];
 
 const iconMap: Record<string, React.ElementType> = {
   linkedin: Linkedin,
