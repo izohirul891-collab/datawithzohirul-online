@@ -86,6 +86,9 @@ const ContactSection = () => {
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold">
             Let's Work Together
           </h2>
+          <p className="text-muted-foreground mt-4 max-w-2xl mx-auto text-base md:text-lg">
+            I help HR teams and businesses make data-driven decisions with dashboards that uncover workforce and performance insights.
+          </p>
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-10 max-w-4xl mx-auto">

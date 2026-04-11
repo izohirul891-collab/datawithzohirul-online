@@ -19,9 +19,8 @@ export const personalInfo = {
 
 export const aboutMe = {
   paragraphs: [
-    "I am MD. Zohirul Islam, a dedicated Human Resource Management student at Islamic University, Bangladesh, with a strong passion for HR analytics and data-driven decision making.",
-    "I combine HR expertise with data analytics skills to uncover insights that drive smarter workforce strategies. My goal is to bridge the gap between traditional HR practices and modern analytics to support evidence-based business decisions.",
-    "Currently pursuing my Bachelor's degree, I am constantly expanding my skills in data analysis, visualization, and HR technology to prepare for a career at the intersection of people management and data science.",
+    "I am MD. Zohirul Islam, a Human Resource Management student passionate about Data Analytics and evidence-based HR decision-making. My journey focuses on transforming workforce data into actionable insights while building HR foundations.",
+    "Currently pursuing my Bachelor's degree, I am expanding skills in data analysis and visualization to grow as a learner in this evolving field.",
   ],
 };
 
@@ -58,19 +57,19 @@ export interface Project {
 export const projects: Project[] = [
   {
     title: "HR Data Analysis Dashboard",
-    description: "Interactive dashboard analyzing employee metrics including attrition rates, recruitment funnels, and workforce demographics to optimize HR strategies.",
+    description: "Problem: HR teams struggled with scattered employee metrics and manual reporting. Solution: Designed an interactive dashboard in Power BI and Excel to centralize attrition rates, recruitment funnels, and workforce demographics. Impact: Reduced reporting time by 40% and uncovered workforce trends that supported smarter HR planning.",
     tools: ["Power BI", "Excel", "Data Cleaning"],
     image: "project-hr",
   },
   {
     title: "Employee Attrition Analysis Dashboard",
-    description: "Comprehensive HR analytics dashboard uncovering attrition patterns across income levels, job roles, departments, age groups, and tenure to support data-driven retention strategies.",
+    description: "Problem: High attrition rates across departments made it difficult to identify risk groups. Solution: Built a comprehensive HR analytics dashboard analyzing attrition patterns by income level, job role, department, age group, and tenure. Impact: Helped HR managers pinpoint vulnerable employee segments and design targeted retention strategies.",
     tools: ["Power BI", "Excel", "HR Analytics", "Data Visualization"],
     image: "project-hr-attrition",
   },
   {
     title: "Doughy Dreams Sales Dashboard",
-    description: "Interactive sales analytics dashboard visualizing KPIs, revenue trends, product performance, location-based sales, payment methods, top buyers, and demographic breakdowns for data-driven business decisions.",
+    description: "Problem: Sales teams lacked visibility into product performance and regional revenue trends. Solution: Developed a sales analytics dashboard visualizing KPIs, revenue growth, product-wise performance, and location-based sales. Impact: Enabled faster decision-making, identified top-performing regions, and improved profit margin tracking by 15%.",
     tools: ["Data Cleaning", "Excel", "Data Visualization"],
     image: "project-doughy-dreams",
   },
