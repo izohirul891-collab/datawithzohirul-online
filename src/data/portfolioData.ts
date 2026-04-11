@@ -56,12 +56,6 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    title: "HR Data Analysis Dashboard",
-    description: "Problem: HR teams struggled with scattered employee metrics and manual reporting. Solution: Designed an interactive dashboard in Power BI and Excel to centralize attrition rates, recruitment funnels, and workforce demographics. Impact: Reduced reporting time by 40% and uncovered workforce trends that supported smarter HR planning.",
-    tools: ["Power BI", "Excel", "Data Cleaning"],
-    image: "project-hr",
-  },
-  {
     title: "Employee Attrition Analysis Dashboard",
     description: "Problem: High attrition rates across departments made it difficult to identify risk groups. Solution: Built a comprehensive HR analytics dashboard analyzing attrition patterns by income level, job role, department, age group, and tenure. Impact: Helped HR managers pinpoint vulnerable employee segments and design targeted retention strategies.",
     tools: ["Power BI", "Excel", "HR Analytics", "Data Visualization"],

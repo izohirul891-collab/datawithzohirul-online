@@ -1,4 +1,4 @@
-import { personalInfo } from "@/data/portfolioData";
+import { personalInfo, projects, hrSkills, dataSkills } from "@/data/portfolioData";
 import { Button } from "@/components/ui/button";
 import profilePhoto from "@/assets/profile-photo.png";
 import iconCv from "@/assets/icon-cv.png";
@@ -163,16 +163,21 @@ const HeroSection = () => {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 4.4 }}
             >
-              {[
-                { value: "3+", label: "Projects" },
-                { value: "6+", label: "Skills" },
-                { value: "HRM", label: "Focused" },
-              ].map((stat) => (
-                <div key={stat.label} className="text-center">
-                  <p className="font-display text-2xl font-bold text-primary">{stat.value}</p>
-                  <p className="text-xs text-muted-foreground uppercase tracking-wider">{stat.label}</p>
+              <div className="space-y-2">
+                <div className="flex gap-8">
+                  {[
+                    { value: `${projects.length}+`, label: "Projects" },
+                    { value: `${hrSkills.length + dataSkills.length}+`, label: "Skills" },
+                    { value: "HRM", label: "Focused" },
+                  ].map((stat) => (
+                    <div key={stat.label} className="text-center">
+                      <p className="font-display text-2xl font-bold text-primary">{stat.value}</p>
+                      <p className="text-xs text-muted-foreground uppercase tracking-wider">{stat.label}</p>
+                    </div>
+                  ))}
                 </div>
-              ))}
+                <p className="text-[10px] text-muted-foreground/60 italic">Auto-updated as I grow my portfolio.</p>
+              </div>
             </motion.div>
           </div>
 
