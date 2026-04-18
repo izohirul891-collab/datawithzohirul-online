@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, Mail, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import projectImage from "@/assets/project-urban-brew.png";
+import ShareButtons from "@/components/ShareButtons";
+import { personalInfo } from "@/data/portfolioData";
 
 const UrbanBrewProject = () => {
   return (
@@ -70,11 +72,34 @@ const UrbanBrewProject = () => {
               </ul>
 
               <h2 className="font-display text-xl font-bold text-foreground mb-4">Design Highlights</h2>
-              <p className="text-muted-foreground mb-6 leading-relaxed">
+              <p className="text-muted-foreground mb-8 leading-relaxed">
                 The dashboard features a modern, user-friendly UI with interactive filters, enabling 
                 data-driven storytelling through charts and graphs. It delivers actionable insights 
                 for decision-making and performance optimization.
               </p>
+            </div>
+
+            <div className="mb-8">
+              <ShareButtons title="Urban Brew Co. Business Dashboard by MD. Zohirul Islam" />
+            </div>
+
+            <div className="rounded-2xl bg-gradient-to-br from-primary/10 via-primary/5 to-accent/5 border border-primary/20 p-6 md:p-8 text-center">
+              <h3 className="font-display text-xl md:text-2xl font-bold text-foreground mb-2">
+                Ready to transform your business data?
+              </h3>
+              <p className="text-muted-foreground mb-5 max-w-xl mx-auto">
+                I build executive BI dashboards that surface profit, growth and category insights at a glance.
+              </p>
+              <div className="flex flex-wrap justify-center gap-3">
+                <Button asChild variant="hero" className="rounded-full">
+                  <Link to="/#contact"><Mail size={16} /> Hire Me</Link>
+                </Button>
+                <Button asChild variant="heroOutline" className="rounded-full">
+                  <a href={`https://wa.me/${personalInfo.phone.replace(/\D/g, "")}`} target="_blank" rel="noopener noreferrer">
+                    <MessageCircle size={16} /> Chat on WhatsApp
+                  </a>
+                </Button>
+              </div>
             </div>
           </div>
         </motion.div>

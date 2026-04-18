@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, Mail, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import projectImage from "@/assets/project-doughy-dreams.png";
+import ShareButtons from "@/components/ShareButtons";
+import { personalInfo } from "@/data/portfolioData";
 
 const DoughyDreamsProject = () => {
   return (
@@ -74,10 +76,33 @@ const DoughyDreamsProject = () => {
                 data into actionable insights for smarter decision-making.
               </p>
 
-              <div className="rounded-xl border border-amber-500/30 bg-amber-500/5 p-4">
+              <div className="rounded-xl border border-amber-500/30 bg-amber-500/5 p-4 mb-8">
                 <p className="text-sm text-muted-foreground italic">
                   📌 <strong>Note:</strong> This project uses a sample dataset created for data analysis and dashboard visualization purposes.
                 </p>
+              </div>
+            </div>
+
+            <div className="mb-8">
+              <ShareButtons title="Doughy Dreams Sales Dashboard by MD. Zohirul Islam" />
+            </div>
+
+            <div className="rounded-2xl bg-gradient-to-br from-primary/10 via-primary/5 to-accent/5 border border-primary/20 p-6 md:p-8 text-center">
+              <h3 className="font-display text-xl md:text-2xl font-bold text-foreground mb-2">
+                Want a sales dashboard like this?
+              </h3>
+              <p className="text-muted-foreground mb-5 max-w-xl mx-auto">
+                I design clean, interactive dashboards that turn your sales data into clear revenue insights.
+              </p>
+              <div className="flex flex-wrap justify-center gap-3">
+                <Button asChild variant="hero" className="rounded-full">
+                  <Link to="/#contact"><Mail size={16} /> Hire Me</Link>
+                </Button>
+                <Button asChild variant="heroOutline" className="rounded-full">
+                  <a href={`https://wa.me/${personalInfo.phone.replace(/\D/g, "")}`} target="_blank" rel="noopener noreferrer">
+                    <MessageCircle size={16} /> Chat on WhatsApp
+                  </a>
+                </Button>
               </div>
             </div>
           </div>
