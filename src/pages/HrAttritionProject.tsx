@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, Mail, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import projectImage from "@/assets/project-hr-attrition.png";
+import ShareButtons from "@/components/ShareButtons";
+import { personalInfo } from "@/data/portfolioData";
 
 const HrAttritionProject = () => {
   return (
@@ -83,6 +85,7 @@ const HrAttritionProject = () => {
                     {filter}
                   </span>
                 ))}
+                </div>
               </div>
 
               <h2 className="font-display text-xl font-bold text-foreground mb-4">Tools & Skills</h2>
