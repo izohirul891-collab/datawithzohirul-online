@@ -8,12 +8,12 @@ export const personalInfo = {
   tagline: "Using data and HR knowledge to support smarter business decisions.",
   email: "izohirul891@gmail.com",
   email2: "mdzohirulislam3000@gmail.com",
-  phone: "01306853224",
+  phone: "+880 1306-853224",
   socialLinks: [
     { name: "Facebook", url: "https://www.facebook.com/share/14V5ws9cPYG/?mibextid=wwXIfr", icon: "facebook" },
     { name: "LinkedIn", url: "https://linkedin.com/in/yourprofile", icon: "linkedin" },
     { name: "GitHub", url: "https://github.com/yourprofile", icon: "github" },
-    { name: "WhatsApp", url: "https://wa.me/1306853224", icon: "whatsapp" },
+    { name: "WhatsApp", url: "https://wa.me/8801306853224", icon: "whatsapp" },
   ] as { name: string; url: string; icon: string }[],
 };
 
