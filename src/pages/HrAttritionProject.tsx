@@ -86,13 +86,35 @@ const HrAttritionProject = () => {
               </div>
 
               <h2 className="font-display text-xl font-bold text-foreground mb-4">Tools & Skills</h2>
-              <div className="flex flex-wrap gap-2 mb-6">
+              <div className="flex flex-wrap gap-2 mb-8">
                 {["Data Visualization", "KPI Tracking", "Power BI", "Excel", "HR Analytics"].map((tool) => (
                   <span key={tool} className="px-4 py-2 text-sm font-semibold rounded-full bg-primary/10 text-primary border border-primary/20">
                     {tool}
                   </span>
                 ))}
-                </div>
+              </div>
+            </div>
+
+            <div className="mb-8">
+              <ShareButtons title="Employee Attrition Analysis Dashboard by MD. Zohirul Islam" />
+            </div>
+
+            <div className="rounded-2xl bg-gradient-to-br from-primary/10 via-primary/5 to-accent/5 border border-primary/20 p-6 md:p-8 text-center">
+              <h3 className="font-display text-xl md:text-2xl font-bold text-foreground mb-2">
+                Need a similar HR dashboard?
+              </h3>
+              <p className="text-muted-foreground mb-5 max-w-xl mx-auto">
+                I build Power BI & Excel dashboards that help HR teams reduce attrition and make data-driven decisions.
+              </p>
+              <div className="flex flex-wrap justify-center gap-3">
+                <Button asChild variant="hero" className="rounded-full">
+                  <Link to="/#contact"><Mail size={16} /> Hire Me</Link>
+                </Button>
+                <Button asChild variant="heroOutline" className="rounded-full">
+                  <a href={`https://wa.me/${personalInfo.phone.replace(/\D/g, "")}`} target="_blank" rel="noopener noreferrer">
+                    <MessageCircle size={16} /> Chat on WhatsApp
+                  </a>
+                </Button>
               </div>
             </div>
           </div>
