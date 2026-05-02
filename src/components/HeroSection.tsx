@@ -1,4 +1,4 @@
-import { personalInfo, projects, hrSkills, dataSkills } from "@/data/portfolioData";
+import { personalInfo, projects, dataSkills } from "@/data/portfolioData";
 import { Button } from "@/components/ui/button";
 import profilePhoto from "@/assets/profile-photo.png";
 import iconCv from "@/assets/icon-cv.png";
@@ -167,8 +167,8 @@ const HeroSection = () => {
                 <div className="flex gap-8">
                   {[
                     { value: `${projects.length}+`, label: "Projects" },
-                    { value: `${hrSkills.length + dataSkills.length}+`, label: "Skills" },
-                    { value: "HRM", label: "Focused" },
+                    { value: `${dataSkills.length}+`, label: "Skills" },
+                    { value: "Data", label: "Focused" },
                   ].map((stat) => (
                     <div key={stat.label} className="text-center">
                       <p className="font-display text-2xl font-bold text-primary">{stat.value}</p>

@@ -1,5 +1,5 @@
-import { hrSkills, dataSkills, type Skill } from "@/data/portfolioData";
-import { Briefcase, BarChart3 } from "lucide-react";
+import { dataSkills, type Skill } from "@/data/portfolioData";
+import { BarChart3 } from "lucide-react";
 import { motion } from "framer-motion";
 
 const SkillBar = ({ skill, index }: { skill: Skill; index: number }) => (
@@ -47,28 +47,7 @@ const SkillsSection = () => {
           </h2>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-10">
-          {/* HR Skills */}
-          <motion.div
-            className="p-8 rounded-2xl bg-card border border-border hover:border-primary/20 hover:shadow-xl hover:shadow-primary/5 transition-all duration-300"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-          >
-            <div className="flex items-center gap-3 mb-8">
-              <div className="p-3.5 rounded-xl bg-primary/10 text-primary">
-                <Briefcase size={26} />
-              </div>
-              <h3 className="font-display text-xl font-bold text-foreground">HR Skills</h3>
-            </div>
-            <div className="space-y-6">
-              {hrSkills.map((skill, i) => (
-                <SkillBar key={i} skill={skill} index={i} />
-              ))}
-            </div>
-          </motion.div>
-
+        <div className="max-w-3xl mx-auto">
           {/* Data Analytics Skills */}
           <motion.div
             className="p-8 rounded-2xl bg-card border border-border hover:border-accent/20 hover:shadow-xl hover:shadow-accent/5 transition-all duration-300"
