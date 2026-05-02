@@ -3,9 +3,9 @@ import { Target, TrendingUp, Users } from "lucide-react";
 import { motion } from "framer-motion";
 
 const highlights = [
-  { icon: TrendingUp, label: "Data Analytics Journey", desc: "Exploring insights for smarter HR decisions" },
-  { icon: Users, label: "HR Foundations in Learning", desc: "Building knowledge of HRM principles" },
-  { icon: Target, label: "Problem Solver in Progress", desc: "Applying analytics to HR challenges" },
+  { icon: TrendingUp, label: "Analytics Explorer", desc: "Discovering insights through data visualization." },
+  { icon: Users, label: "Analytics Foundations", desc: "Building skills in Excel, Power BI, Python." },
+  { icon: Target, label: "Applied Analytics Practice", desc: "Solving real-world challenges with data." },
 ];
 
 const fadeUp = {
