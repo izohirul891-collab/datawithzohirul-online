@@ -45,6 +45,8 @@ export const dataSkills: Skill[] = [
   { name: "Data Analysis", level: 85 },
   { name: "Data Visualization", level: 85 },
   { name: "Basic SQL", level: 70 },
+  { name: "Power Pivot", level: 75 },
+  { name: "Data Modeling", level: 75 },
 ];
 
 export interface Project {

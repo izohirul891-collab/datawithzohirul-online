@@ -222,8 +222,8 @@ const HeroSection = () => {
                 transition={{ duration: 0.6, delay: 4.2, type: "spring", stiffness: 150, damping: 12 }}
                 whileHover={{ scale: 1.05 }}
               >
-                <p className="font-display font-bold text-2xl text-primary">HRM</p>
-                <p className="text-xs text-muted-foreground">& Analytics</p>
+                <p className="font-display font-bold text-lg text-primary leading-tight">Aspiring</p>
+                <p className="text-xs text-muted-foreground">Data Analyst</p>
               </motion.div>
 
               {/* Top-left floating dot */}
