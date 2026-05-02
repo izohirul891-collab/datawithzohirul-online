@@ -19,8 +19,8 @@ export const personalInfo = {
 
 export const aboutMe = {
   paragraphs: [
-    "I am MD. Zohirul Islam, a Human Resource Management student passionate about Data Analytics and evidence-based HR decision-making. My journey focuses on transforming workforce data into actionable insights while building HR foundations.",
-    "Currently pursuing my Bachelor's degree, I am expanding skills in data analysis and visualization to grow as a learner in this evolving field.",
+    "I am MD. Zohirul Islam, currently learning and building my skills in Data Analytics. I am interested in working with data to understand patterns, clean datasets, and create simple models and visualizations that help make sense of information.",
+    "As I continue learning, I am focusing on developing practical skills in data analysis, data modeling, and visualization. I enjoy exploring real datasets and improving step by step, with the goal of becoming confident in turning data into useful insights.",
   ],
 };
 
