@@ -4,8 +4,8 @@
 
 export const personalInfo = {
   name: "MD. ZOHIRUL ISLAM",
-  title: "Turning HR Data into Actionable Insights",
-  tagline: "Using data and HR knowledge to support smarter business decisions.",
+  title: "Transforming Data into Actionable Insights",
+  tagline: "Leveraging data analysis, modeling, and visualization techniques to drive informed decision-making.",
   email: "izohirul891@gmail.com",
   email2: "mdzohirulislam3000@gmail.com",
   phone: "+880 1306-853224",
