@@ -11,7 +11,7 @@ export const personalInfo = {
   phone: "+880 1306-853224",
   socialLinks: [
     { name: "Facebook", url: "https://www.facebook.com/share/14V5ws9cPYG/?mibextid=wwXIfr", icon: "facebook" },
-    { name: "LinkedIn", url: "https://linkedin.com/in/yourprofile", icon: "linkedin" },
+    { name: "LinkedIn", url: "https://www.linkedin.com/in/md-zohirul-islam-278882407", icon: "linkedin" },
     { name: "GitHub", url: "https://github.com/yourprofile", icon: "github" },
     { name: "WhatsApp", url: "https://wa.me/8801306853224", icon: "whatsapp" },
   ] as { name: string; url: string; icon: string }[],
