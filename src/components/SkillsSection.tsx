@@ -1,5 +1,5 @@
-import { hrSkills, dataSkills, type Skill } from "@/data/portfolioData";
-import { Briefcase, BarChart3 } from "lucide-react";
+import { dataSkills, type Skill } from "@/data/portfolioData";
+import { BarChart3 } from "lucide-react";
 import { motion } from "framer-motion";
 
 const SkillBar = ({ skill, index }: { skill: Skill; index: number }) => (
