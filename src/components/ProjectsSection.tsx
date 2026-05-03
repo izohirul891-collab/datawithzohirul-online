@@ -19,7 +19,7 @@ const imageMap: Record<string, string> = {
 
 const linkMap: Record<string, string> = {
   "HR Data Analysis Dashboard": "/projects/portfolio",
-  "Doughy Dreams Sales Dashboard": "/projects/doughy-dreams",
+  "Sales Dashboard": "/projects/doughy-dreams",
   "Urban Brew Co. Business Dashboard": "/projects/urban-brew",
   "Employee Attrition Analysis Dashboard": "/projects/hr-attrition",
 };
