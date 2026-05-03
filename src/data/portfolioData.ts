@@ -64,7 +64,7 @@ export const projects: Project[] = [
     image: "project-hr-attrition",
   },
   {
-    title: "Doughy Dreams Sales Dashboard",
+    title: "Sales Dashboard",
     description: "Problem: Sales teams lacked visibility into product performance and regional revenue trends. Solution: Developed a sales analytics dashboard visualizing KPIs, revenue growth, product-wise performance, and location-based sales. Impact: Enabled faster decision-making, identified top-performing regions, and improved profit margin tracking by 15%.",
     tools: ["Data Cleaning", "Excel", "Data Visualization"],
     image: "project-doughy-dreams",

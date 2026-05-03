@@ -26,13 +26,13 @@ const DoughyDreamsProject = () => {
               Data Analytics Project
             </span>
             <h1 className="font-display text-3xl md:text-5xl font-bold text-foreground mb-6">
-              Doughy Dreams Sales Dashboard
+              Sales Dashboard
             </h1>
 
             <div className="rounded-2xl overflow-hidden mb-8 border border-border">
               <img
                 src={projectImage}
-                alt="Doughy Dreams Sales Dashboard"
+                alt="Sales Dashboard"
                 className="w-full h-auto object-cover"
               />
             </div>
@@ -40,7 +40,7 @@ const DoughyDreamsProject = () => {
             <div className="prose prose-lg max-w-none">
               <h2 className="font-display text-xl font-bold text-foreground mb-4">Overview</h2>
               <p className="text-muted-foreground mb-6 leading-relaxed">
-                Doughy Dreams Sales Dashboard is an interactive web application designed to visualize 
+                Sales Dashboard is an interactive web application designed to visualize 
                 and analyze company sales data. It provides a clear overview of performance metrics 
                 through KPIs, charts, and graphs, helping stakeholders make informed business decisions.
               </p>
@@ -84,7 +84,7 @@ const DoughyDreamsProject = () => {
             </div>
 
             <div className="mb-8">
-              <ShareButtons title="Doughy Dreams Sales Dashboard by MD. Zohirul Islam" />
+              <ShareButtons title="Sales Dashboard by MD. Zohirul Islam" />
             </div>
 
             <div className="rounded-2xl bg-gradient-to-br from-primary/10 via-primary/5 to-accent/5 border border-primary/20 p-6 md:p-8 text-center">
