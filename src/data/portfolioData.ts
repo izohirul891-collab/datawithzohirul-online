@@ -58,6 +58,12 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    title: "Power BI Sales Dashboard",
+    description: "Problem: Raw sales data was scattered and hard to interpret for business decisions. Solution: Built an interactive Power BI dashboard with KPIs (25K orders, $24.9M revenue, $10.4M profit), monthly trend comparisons, product/subcategory performance, customer demographics, and a geographic map view. Impact: Transformed raw data into clear, actionable insights for performance tracking across products, regions, and customer segments.",
+    tools: ["Power BI", "DAX", "Data Modeling", "Data Cleaning"],
+    image: "project-powerbi-sales",
+  },
+  {
     title: "Employee Attrition Analysis Dashboard",
     description: "Problem: High attrition rates across departments made it difficult to identify risk groups. Solution: Built a comprehensive HR analytics dashboard analyzing attrition patterns by income level, job role, department, age group, and tenure. Impact: Helped HR managers pinpoint vulnerable employee segments and design targeted retention strategies.",
     tools: ["Power BI", "Excel", "HR Analytics", "Data Visualization"],
