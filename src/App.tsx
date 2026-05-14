@@ -10,6 +10,7 @@ import DoughyDreamsProject from "./pages/DoughyDreamsProject";
 import UrbanBrewProject from "./pages/UrbanBrewProject";
 import HrAttritionProject from "./pages/HrAttritionProject";
 import PowerBiSalesProject from "./pages/PowerBiSalesProject";
+import PizzaSalesProject from "./pages/PizzaSalesProject";
 import NotFound from "./pages/NotFound";
 import WhatsAppFloat from "./components/WhatsAppFloat";
 
@@ -29,6 +30,7 @@ const App = () => (
           <Route path="/projects/urban-brew" element={<UrbanBrewProject />} />
           <Route path="/projects/hr-attrition" element={<HrAttritionProject />} />
           <Route path="/projects/powerbi-sales" element={<PowerBiSalesProject />} />
+          <Route path="/projects/pizza-sales" element={<PizzaSalesProject />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

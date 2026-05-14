@@ -58,6 +58,12 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    title: "Pizza Sales Analysis Dashboard",
+    description: "Problem: Raw pizza sales data needed cleaning and structuring to surface meaningful business insights. Solution: Built an interactive Excel & Power BI dashboard with KPIs (817.86K revenue, 21K orders, 50K pizzas sold), daily/monthly trends, category & size performance, and Top/Bottom 5 sellers analysis. Impact: Revealed Friday as peak day, July as best month, Classic category leading at 30%, and Large size dominating at 38% — enabling smarter inventory and promotion decisions.",
+    tools: ["Excel", "Power BI", "DAX", "Data Modeling"],
+    image: "project-pizza-sales",
+  },
+  {
     title: "Power BI Sales Dashboard",
     description: "Problem: Raw sales data was scattered and hard to interpret for business decisions. Solution: Built an interactive Power BI dashboard with KPIs (25K orders, $24.9M revenue, $10.4M profit), monthly trend comparisons, product/subcategory performance, customer demographics, and a geographic map view. Impact: Transformed raw data into clear, actionable insights for performance tracking across products, regions, and customer segments.",
     tools: ["Power BI", "DAX", "Data Modeling", "Data Cleaning"],

@@ -7,6 +7,7 @@ import projectDoughyDreams from "@/assets/project-doughy-dreams.png";
 import projectUrbanBrew from "@/assets/project-urban-brew.png";
 import projectHrAttrition from "@/assets/project-hr-attrition.png";
 import projectPowerBiSales from "@/assets/project-powerbi-sales-1.png";
+import projectPizzaSales from "@/assets/project-pizza-sales-1.png";
 import { motion } from "framer-motion";
 
 const imageMap: Record<string, string> = {
@@ -17,6 +18,7 @@ const imageMap: Record<string, string> = {
   "project-urban-brew": projectUrbanBrew,
   "project-hr-attrition": projectHrAttrition,
   "project-powerbi-sales": projectPowerBiSales,
+  "project-pizza-sales": projectPizzaSales,
 };
 
 const linkMap: Record<string, string> = {
@@ -25,6 +27,7 @@ const linkMap: Record<string, string> = {
   "Urban Brew Co. Business Dashboard": "/projects/urban-brew",
   "Employee Attrition Analysis Dashboard": "/projects/hr-attrition",
   "Power BI Sales Dashboard": "/projects/powerbi-sales",
+  "Pizza Sales Analysis Dashboard": "/projects/pizza-sales",
 };
 
 const ProjectsSection = () => {
