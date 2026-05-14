@@ -91,12 +91,6 @@ const PowerBiSalesProject = () => {
                   </a>
                 </Button>
               </div>
-
-              <div className="rounded-xl border border-amber-500/30 bg-amber-500/5 p-4 mb-8">
-                <p className="text-sm text-muted-foreground italic">
-                  📌 <strong>Note:</strong> This project uses a sample dataset created for data analysis and dashboard visualization purposes.
-                </p>
-              </div>
             </div>
 
             <div className="mb-8">
