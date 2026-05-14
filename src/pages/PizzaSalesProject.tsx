@@ -90,12 +90,6 @@ const PizzaSalesProject = () => {
               <p className="text-muted-foreground mb-6 leading-relaxed">
                 Through this project, I improved my skills in data cleaning, data modeling, DAX calculations, calendar table creation, and dashboard design. I also learned how proper data visualization helps identify customer behavior, sales trends, and business performance more effectively.
               </p>
-
-              <div className="rounded-xl border border-amber-500/30 bg-amber-500/5 p-4 mb-8">
-                <p className="text-sm text-muted-foreground italic">
-                  📌 <strong>Note:</strong> This project uses a sample dataset created for data analysis and dashboard visualization purposes.
-                </p>
-              </div>
             </div>
 
             <div className="mb-8">
