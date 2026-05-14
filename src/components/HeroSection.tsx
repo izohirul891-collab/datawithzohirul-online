@@ -138,12 +138,12 @@ const HeroSection = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 4.0 }}
               >
-                <a href="/cv.pdf" download className="group flex flex-col items-center gap-3 cursor-pointer">
+                <a href="/cv.pdf" target="_blank" rel="noopener noreferrer" className="group flex flex-col items-center gap-3 cursor-pointer">
                   <p className="font-display font-bold text-base text-foreground">Quick Overview</p>
                   <div className="w-28 h-28 rounded-2xl bg-secondary/60 border border-border p-3 group-hover:shadow-lg group-hover:scale-105 transition-all duration-200">
                     <img src={iconCv} alt="CV Document" className="w-full h-full object-contain" />
                   </div>
-                  <span className="text-sm text-primary underline underline-offset-4 font-medium">Download CV</span>
+                  <span className="text-sm text-primary underline underline-offset-4 font-medium">View CV</span>
                 </a>
                 <div className="border-l border-dashed border-border" />
                 <button onClick={() => setDownloadOpen(true)} className="group flex flex-col items-center gap-3 cursor-pointer bg-transparent border-none">
